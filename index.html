@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Aplikasi Buku</title>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="bg-[#f09c20] m-0 p-6 md:p-10">
+        <h1 class="text-lg md:text-3xl font-semibold text-white">Aplikasi Cek Baca Buku</h1>
+      </div>
+      <div class="flex-nowrap md:flex gap-5 mt-4">
+        <div class="md:w-1/2 h-40 pr-4 border border-[#786552] drop-shadow-lg rounded-lg p-5 mx-4 md:mx-0">
+          <!-- Form untuk menambahkan buku -->
+          <h2 class="text-xl font-semibold mb-2">Tambah Buku Baru</h2>
+          <form id="addBookForm">
+            <input
+              type="text"
+              id="bookTitle"
+              class="w-full p-2 rounded mb-2 border border-[#c57429] focus:outline-none focus:ring focus:ring-[#c57421]"
+              placeholder="Judul Buku"
+              required
+            />
+            <div class="flex w-full justify-end">
+              <button type="submit" class="bg-[#786552] text-white p-2 rounded">
+                Tambah Buku
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="md:w-1/2 pl-4 border border-[#786552] drop-shadow-lg rounded-lg p-5 mx-4 md:mx-0 mt-3 md:mt-0">
+          <!-- Daftar buku -->
+          <h2 class="text-xl font-semibold mb-2">Daftar Buku</h2>
+          <div id="bookList">
+            <!-- Daftar buku akan ditampilkan di sini -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
